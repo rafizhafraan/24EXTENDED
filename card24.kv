@@ -1,0 +1,151 @@
+#kivy 1.0
+
+#:set src '/Users/abiyyuismunandar/Documents/Stima/24CardGame/Images/'
+<ShownCard@Button>:
+    text_size: self.size
+    font_size: '25sp'
+    markup: True
+
+<ShownImg@Image>:
+    source: src + 'green_back.png'
+    x: self.parent.x
+    y: self.parent.y
+    size: self.parent.size
+    allow_stretch: True
+
+<InputCard@Button>:
+    text_size: self.size
+    font_size: '15sp'
+    size_hint: 1,1
+    markup: True
+
+<InpImg@Image>:
+	x: self.parent.x 
+	y: self.parent.y
+	size: self.parent.size
+    allow_stretch: True
+
+<Card24>:
+   
+    BoxLayout:
+
+        orientation: 'vertical'
+        padding: 20
+
+        BoxLayout:
+          
+            orientation: 'horizontal'
+            padding: 10
+
+            ShownCard:
+                ShownImg
+
+            ShownCard:
+                ShownImg
+
+            ShownCard:
+                ShownImg
+
+            ShownCard:
+                ShownImg
+
+	    BoxLayout:
+
+	        orientation: 'horizontal'
+	        padding: 20
+
+	        GridLayout:
+
+	            cols: 7
+	            padding: 5
+	            row_force_default: True
+	            col_force_default: True
+
+	            col_default_width: 105
+	            row_default_height: 147
+	            size_hint: 1,0.65
+
+	            InputCard:
+	                InpImg:
+	                    source: src + 'AS.png'
+	                
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '2S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '3S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '4S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '5S.png'	
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '6S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '7S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '8S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '9S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + '10S.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + 'JS.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + 'QS.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + 'KS.png'
+
+	            InputCard:
+	                InpImg:
+	                    source: src + 'green_back.png'
+
+	        BoxLayout:
+
+	            orientation: 'vertical'
+	            padding: 5
+
+	            Label:
+	                text: 'Answer'
+	            Label: 
+	                text: 'Point'
+	            Button:
+	                text: 'Solve'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
